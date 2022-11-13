@@ -1,0 +1,50 @@
+body {
+  background: #010110;
+  color: white;
+}
+
+#logs {
+  height: 80vh;
+  overflow-y: scroll;
+  padding: 10px;
+  color: #c1c1c1;
+  background: #000080;
+  background-image: linear-gradient(rgb(9, 9, 86), #010110);
+  border-radius: 5px;
+  display: none;
+}
+
+#logs p {
+  margin: 0px;
+}
+
+#logs p:last-child {
+  color: #ffffff;
+}
+
+select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  background: #000080;
+  background-image: linear-gradient(rgb(9, 9, 86), #010110);
+  color: #ffffff;
+}
+
+.btn {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+.input-div {
+  margin: 10px;
+  text-align: center;
+}
+
+.controls {
+  margin: 10px;
+  text-align: center;
+  display: none;
+}

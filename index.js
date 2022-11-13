@@ -11,6 +11,11 @@ const socketUsers = [];
 const logFiles = {};
 loadLogFiles(logFiles);
 
+app.use("/ui", express.static(__dirname + "/ui"));
+app.get("/", (req, res, next) => {
+  res.sendFile(__dirname + "/ui/index.html");
+});
+
 server.listen(PORT, () => {
   appLogger.info("Access the app at http://localhost:" + PORT);
 });

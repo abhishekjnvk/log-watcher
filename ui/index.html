@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <script src="/ui/script/jquery.min.js"></script>
+  <script src="/ui/script/socket.io.js"></script>
+  <link rel="stylesheet" href="/ui/styles.css">
+  <script src="/ui/script/main.js"">
+  </script>
+</head>
+
+<body>
+  <div class="input-div">
+    <select name="filePath" id="filePath" required></select>
+    <input type="text" id="password" placeholder="Password" />
+    <input type="button" name="viewlogs" id="viewlogs" value="View Logs" class="btn" onclick="viewlogs()" />
+    <p id="warningElemet" style="color: #eb3e4a; font-family: arial; font-weight: lighter"></p>
+    <p id="successElement" style="color: #42ba78; font-family: arial; font-weight: lighter"></p>
+  </div>
+  <p class="controls">
+    <label><input type="checkbox" id="stickToBottom" checked /></label> Stick to bottom
+    <button onclick="clearLog()" class="btn">Clear</button>
+    <button onclick="closeWatch()" class="btn">Close</button>
+  </p>
+
+  <div id="logs"></div>
+</body>
+
+</html>

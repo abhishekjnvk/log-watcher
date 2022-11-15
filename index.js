@@ -6,7 +6,7 @@ const singleread = require("./modules/singleread");
 const app = express();
 const server = require("http").createServer(app);
 const sio = require("socket.io")(server);
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const socketUsers = [];
 const logFiles = {};
 loadLogFiles(logFiles);
